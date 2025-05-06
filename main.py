@@ -27,7 +27,7 @@ k = fftfreq(N, d=dx) * 2 * np.pi
 k2 = k**2
 
 # 初期粒子位置（確率分布に従う）
-N_particles = 5000
+N_particles = 50
 prob_density = np.abs(psi)**2
 cdf = np.cumsum(prob_density)
 cdf /= cdf[-1]
